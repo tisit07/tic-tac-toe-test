@@ -1,19 +1,22 @@
-.cell {
+.cell{
+    background-color: #DCC9B5;
     width: 75px;
     height: 75px;
-    bottom: 2px solid;
-    box-shadow: 0 0 0 2px;
+    color: #967552;
+    border: 1px solid;
+    box-shadow: 0 .5px 0 .5px;
     line-height: 75px;
     font-size: 50px;
     cursor: pointer;
 }
-#gContainer  {
+#gameContainer{
     font-family: "Permanent Marker", cursive;
     text-align: center;
 }
-#cContainer {
-    display: grid;
-    grid-template-columns:  repeat(3, auto);
+#cellContainer{
+    background-color:aqua;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
 }

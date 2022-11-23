@@ -9,7 +9,7 @@ const winConditions = [
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6],
+    [2, 4, 6]
 ];
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
@@ -24,13 +24,13 @@ function initializeGame(){
     running = true;
 }
 function cellClicked(){
-    const cellIndex = this.getAttribute("cellIndex");
+    const cIndex = this.getAttribute("cIndex");
 
-    if(options[cellIndex] != "" || !running){
+    if(options[cIndex] != "" || !running){
         return;
     }
 
-    updateCell(this, cellIndex);
+    updateCell(this, cIndex);
     checkWinner();
 }
 function updateCell(cell, index){
